@@ -1,31 +1,78 @@
-# Cancer-Gene-Expression-Explorer
-A bioinformatics project that analyzes and visualizes cancer gene expression data through an interactive web dashboard.
-# Cancer Gene Expression Explorer
+<!-- Cancer Gene Expression Explorer -->
 
-A bioinformatics project for exploring cancer gene expression data using Python.
+A bioinformatics project that explores and visualizes cancer gene expression data using Python.
+The project focuses on understanding high-dimensional gene expression data through preprocessing, dimensionality reduction, and visualization techniques.
 
-## Features
+<!-- Overview -->
 
-* Gene expression data analysis
-* Principal Component Analysis (PCA)
-* Data visualization
-* Cancer genomics exploration
+Gene expression data contains thousands of features, making direct interpretation difficult.
+This project applies data science techniques such as Principal Component Analysis (PCA) to reduce dimensionality and identify patterns in the data.
 
-## Technologies
+The workflow demonstrates a basic but complete bioinformatics analysis pipeline.
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Scikit-learn
+<!-- Features -->
 
-## Project Structure
+Gene expression data generation and handling
+Data preprocessing and standardization
+Principal Component Analysis (PCA)
+Heatmap visualization of gene expression data
+2D PCA scatter plot for pattern exploration
+End-to-end automated pipeline
 
-* Data/ - datasets
-* Notebook/ - analysis notebooks
-* Outputs/ - generated plots
 
-## Current Progress
+<!-- Technologies Used -->
+Python
+NumPy
+Pandas
+Scikit-learn
+Matplotlib
+Seaborn
 
-* PCA analysis completed
-* PCA visualization generated
+
+<!-- Project Structure -->
+
+Cancer-Gene-Expression-Explorer/
+│
+├── src/
+│   └── pipeline.py
+│
+├── outputs/
+│   ├── heatmap.png
+│   └── pca_plot.png
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│
+└── requirements.txt
+
+<!-- How to Run -->
+pip install -r requirements.txt
+python src/pipeline.py
+Results
+
+After running the pipeline, the following outputs are generated:
+
+Heatmap of gene expression data
+PCA-based 2D visualization of samples
+Processed dataset for further analysis
+
+<!-- Current Progress -->
+
+Data preprocessing completed
+PCA analysis implemented
+Visualization successfully generated
+End-to-end pipeline working
+
+
+<!-- Future Improvements -->
+
+Integration with real cancer datasets (TCGA / GEO)
+Machine learning models for classification
+Feature selection for important genes
+Interactive dashboard for exploration
+Note
+
+<!-- This project is for learning bioinformatics workflows using Python and currently uses synthetic data for demonstration purposes. -->
